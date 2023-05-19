@@ -1,0 +1,54 @@
+/*CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+/*Pseudo classi*/
+   
+/*Generics*/
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(247, 247, 195);
+}
+main{
+   height: calc(100vh - 80px);
+   overflow: auto;
+   background-color: azure;
+   position: relative;
+}
+ul{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+}
+/*Utilties*/
+
+.container{
+    border: solid red 1px;
+}
+.row{
+    border: solid rgb(0, 255, 8) 1px;
+}
+.col{
+    border: solid rgb(0, 13, 255) 1px;
+}
+/*Left-nav*/
+.left_nav{
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
+    background-size: cover;
+    position: absolute;
+    width: 70px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+/*Left-nav*/
+.top_nav{
+    height: 500px;
+    margin-left: 70px;
+}

@@ -6,6 +6,11 @@ li{
 a{
     text-decoration: none;
 }
+h1{
+    font-size: 26px;
+    font-weight: normal;
+
+}
 h2{
     font-weight: normal;
     font-size: 18px;
@@ -25,6 +30,9 @@ main{
 }
 .col{
     border: solid rgb(0, 13, 255) 1px;
+}
+.bg_button{
+    background-color: rgba(0, 0, 0, 0.378);
 }
 /*Left nav*/
 #left_nav{

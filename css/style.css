@@ -31,6 +31,9 @@ main{
 .col{
     border: solid rgb(0, 13, 255) 1px;
 }
+.btn{
+    padding: 2px 4px;
+}
 .bg_button{
     background-color: rgba(0, 0, 0, 0.378);
 }

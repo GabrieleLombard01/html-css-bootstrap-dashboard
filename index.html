@@ -25,65 +25,110 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <div class="container p-0">
-        <!--Header-->
-            <header>
-                <nav class="navbar navbar-expand-lg bg-light">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#">Navbar</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          
+    <div class="container">
+        <!--Upper content-->
+        <header class=" p-2">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="col">
+                        <nav class="navbar bg-light">
+                            <div class="container-fluid">
                             <form class="d-flex" role="search">
-                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            </form>
-
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Notifiche
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                          </li>
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                             </form>
+                            </div>
+                        </nav>
+                    </div>
+                <div class="col text-end">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            <i class="fa-solid fa-bell fa-xl" style="color: #ffae00;"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
                         </ul>
-
-                      </div>
+                      </li>
+                </div>
+            </div>
+        </header>
+        <!--Under content-->
+        <div class="container p-0">
+            <main class="position-relative">
+            <!--Left nav-->
+            <nav id="left_nav" class="col-2 h-100 position-absolut bottom-0 top-0 d-lg-none">
+                <div class="row m-0 h-100 flex-column justify-content-between">
+                    <div class="col text-center pt-4 lh-lg">
+                        <ul class="m-0 p-0">
+                            <li>
+                                <a href="#" class="text-white">
+                                    <i class="fa-solid fa-house fa-2xl pb-4"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white ">
+                                    <i class="fa-solid fa-chart-simple fa-2xl pb-4"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">
+                                    <i class="fa-solid fa-signal fa-2xl pb-4"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                  </nav>
-            </header>
-        <!--Main contents-->
-            <main>
-                <!--Left-nav-->
-                <nav class="left_nav">
-
-                </nav>
-                <!--top-nav-->
-                <nav class="top_nav container bg-primary">
-                    <div class="row">
-                        <div class="col-10">
-                            <h3>Nuovo studente</h3>
-                        </div>
-                        <div class="col-10">Boolean</div>
-                        <div class="col-10">Studenti online</div>
-
+                    <div class="col text-center d-flex flex-column justify-content-end pb-3">
+                        <a id="my_gear" href="#">
+                            <i class="text-white fa-solid fa-gear fa-2xl pt-5"></i>
+                        </a>
                     </div>
-                </nav>
-                <!--Prossime classi-->
-                <section></section>
-                <!--FAQ-->
-                <section></section>
-                <!--T0DO-->
-                <section></section>
-                <!--Utenti attivi-->
-                <section></section>
+                </div>
+            </nav>
+
+            <nav id="left_nav" class="col-2 h-100 position-absolut bottom-0 top-0 d-lg-block">
+                <div class="row m-0 h-100 flex-column justify-content-between">
+                    <div class="col text-center pt-4 lh-lg">
+                        <ul class="m-0 p-0">
+                            <li>
+                                <a href="#" class="text-white">
+                                    <i class="fa-solid fa-house fa-xl pb-4"></i>
+                                    <span><strong>Home</strong></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white ">
+                                    <i class="fa-solid fa-chart-simple fa-xl pb-4 pe-lg-2"></i>
+                                    <span><strong>Stats</strong></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">
+                                    <i class="fa-solid fa-signal fa-xl pb-4"></i>
+                                    <span><strong>Signals</strong></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col text-center d-flex flex-column justify-content-end pb-3">
+                        <a id="my_gear" href="#">
+                            <i class="text-white fa-solid fa-gear fa-xl pt-5"></i>
+                            <span class="text-white"><strong>Admin</strong></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+
             </main>
+
+        </div>
+
+
     </div>
     <!--! JS Bootstrap link -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

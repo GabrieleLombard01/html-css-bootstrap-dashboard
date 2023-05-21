@@ -58,77 +58,87 @@
             </div>
         </header>
         <!--Under content-->
-        <div class="container p-0">
-            <main class="position-relative">
+        
+        <main class="position-relative container p-0">
             <!--Left nav-->
-            <nav id="left_nav" class="col-2 h-100 position-absolut bottom-0 top-0 d-lg-none">
-                <div class="row m-0 h-100 flex-column justify-content-between">
-                    <div class="col text-center pt-4 lh-lg">
-                        <ul class="m-0 p-0">
-                            <li>
-                                <a href="#" class="text-white">
-                                    <i class="fa-solid fa-house fa-2xl pb-4"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-white ">
-                                    <i class="fa-solid fa-chart-simple fa-2xl pb-4"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-white">
-                                    <i class="fa-solid fa-signal fa-2xl pb-4"></i>
-                                </a>
-                            </li>
-                        </ul>
+            <div class="container p-0 m-0 h-100 w-100">
+
+                <div class="row m-0 h-100 w-100">
+                  <nav id="left_nav" class="col-2 h-100 position-absolut bottom-0 top-0 d-lg-none p-0">
+                      <div class="row m-0 h-100 flex-column justify-content-between">
+                          <div class="col text-center pt-4 lh-lg">
+                              <ul class="m-0 p-0">
+                                  <li>
+                                      <a href="#" class="text-white">
+                                          <i class="fa-solid fa-house fa-2xl pb-4"></i>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-white ">
+                                          <i class="fa-solid fa-chart-simple fa-2xl pb-4"></i>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-white">
+                                          <i class="fa-solid fa-signal fa-2xl pb-4"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="col text-center d-flex flex-column justify-content-end pb-3">
+                              <a id="my_gear" href="#">
+                                  <i class="text-white fa-solid fa-gear fa-2xl pt-5"></i>
+                              </a>
+                          </div>
+                      </div>
+                  </nav>
+      
+                  <nav id="left_nav" class="d-none col-2 h-100 position-absolut bottom-0 top-0 d-lg-block">
+                      <div class="row m-0 h-100 flex-column justify-content-between">
+                          <div class="col text-center pt-4 lh-lg">
+                              <ul class="m-0 p-0">
+                                  <li>
+                                      <a href="#" class="text-white">
+                                          <i class="fa-solid fa-house fa-xl pb-4"></i>
+                                          <span><strong>Home</strong></span>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-white ">
+                                          <i class="fa-solid fa-chart-simple fa-xl pb-4 pe-lg-2"></i>
+                                          <span><strong>Stats</strong></span>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-white">
+                                          <i class="fa-solid fa-signal fa-xl pb-4"></i>
+                                          <span><strong>Signals</strong></span>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="col text-center d-flex flex-column justify-content-end pb-3">
+                              <a id="my_gear" href="#">
+                                  <i class="text-white fa-solid fa-gear fa-xl pt-5"></i>
+                                  <span class="text-white"><strong>Admin</strong></span>
+                              </a>
+                          </div>
+                      </div>
+                  </nav>
+                  <!-- top Nav -->
+                  <div class="col-10 p-0">
+                    <div class="container bg-primary text-white">
+                        <div class="row flex-column">
+                            <div class="col p-3"><h2 class="d-inline me-3">Nuovo studente</h2>
+                                <button type="button" class="btn btn-outline-light">+</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col text-center d-flex flex-column justify-content-end pb-3">
-                        <a id="my_gear" href="#">
-                            <i class="text-white fa-solid fa-gear fa-2xl pt-5"></i>
-                        </a>
-                    </div>
-                </div>
-            </nav>
+                  </div> 
 
-            <nav id="left_nav" class="d-none col-2 h-100 position-absolut bottom-0 top-0 d-lg-block">
-                <div class="row m-0 h-100 flex-column justify-content-between">
-                    <div class="col text-center pt-4 lh-lg">
-                        <ul class="m-0 p-0">
-                            <li>
-                                <a href="#" class="text-white">
-                                    <i class="fa-solid fa-house fa-xl pb-4"></i>
-                                    <span><strong>Home</strong></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-white ">
-                                    <i class="fa-solid fa-chart-simple fa-xl pb-4 pe-lg-2"></i>
-                                    <span><strong>Stats</strong></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-white">
-                                    <i class="fa-solid fa-signal fa-xl pb-4"></i>
-                                    <span><strong>Signals</strong></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col text-center d-flex flex-column justify-content-end pb-3">
-                        <a id="my_gear" href="#">
-                            <i class="text-white fa-solid fa-gear fa-xl pt-5"></i>
-                            <span class="text-white"><strong>Admin</strong></span>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-
-
-            </main>
-
-        </div>
-
-
+                </div><!-- ! row under content -->
+            </div><!-- ! Container under content -->
+        </main>
     </div>
     <!--! JS Bootstrap link -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

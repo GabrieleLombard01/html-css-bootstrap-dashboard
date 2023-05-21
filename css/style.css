@@ -21,6 +21,11 @@ main{
     overflow: auto;
     background-color: bisque;
 }
+input{
+   width: 320px;
+    height: 40px;
+}
+
 /*Utilties*/
 .container{
     border: solid red 1px;
@@ -37,6 +42,14 @@ main{
 .bg_button{
     background-color: rgba(0, 0, 0, 0.378);
 }
+.form-control{
+    padding: 0;
+}
+/*header*/
+.logomobile{
+    width: 60px;
+}
+
 /*Left nav*/
 #left_nav{
     background-color: #051e34;

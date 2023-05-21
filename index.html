@@ -29,24 +29,26 @@
         <!--Upper content-->
         <header class=" p-2">
                 <div class="row align-items-center">
-                    <div class="col">
-                        <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                    <div class="col p-0">
+                        <a class="d-lg-none" href="#"><img class="logomobile" src="img/mobile-logo.png" alt="logo"></a>
+                        <a class="d-none d-lg-block ps-2" href="#"><img src="img/logo.svg" alt="logo"></a>
                     </div>
                     <div class="col">
-                        <nav class="navbar bg-light">
-                            <div class="container-fluid">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                             </form>
-                            </div>
+                        <nav class="navbar m-0 p-0 bg-light w-100">
+                            <form action="" method="post">
+                                <input class="rounded-3 d-lg-inline-block" placeholder="Prova a cercare:Lezioni di Laravel" type="search">
+                            </form>
                         </nav>
                     </div>
                 <div class="col text-end">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            <i class="fa-solid fa-list d-none d-lg-inline-block px-2"></i>
+                            <i class="fa-solid fa-question d-none d-lg-inline-block px-2"></i>
+                            <i class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-block px-2"></i>
                             <i class="fa-solid fa-bell fa-xl" style="color: #ffae00;"></i>
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu d-lg-none">
                           <li><a class="dropdown-item" href="#">Action</a></li>
                           <li><a class="dropdown-item" href="#">Another action</a></li>
                           <li><a class="dropdown-item" href="#">Something else here</a></li>

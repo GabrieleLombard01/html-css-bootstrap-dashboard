@@ -75,7 +75,10 @@ main{
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
 }
-
+/*PROSSIME CLASSI*/
+.avatar_orange{
+    width: 30px;
+}
 
 
 

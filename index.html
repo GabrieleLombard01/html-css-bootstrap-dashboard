@@ -133,18 +133,48 @@
                 <div class="d-flex flex-column flex-lg-row">
                     <div class="col p-3 order-lg-last"><h2 class="d-inline me-3">Nuovo studente</h2>
                         <button class="btn btn-primary border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
-                  <!---->   <div class="offcanvas w-100 w-md-75 offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <!---->   <div class="offcanvas w-100 offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title text-black" id="offcanvasRightLabel">Inserisci un nuovo utente</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body text-black">
-                                <form method="get" action="">
-                                    <input class=" d-inline-block" type="text">
-                                    <input class=" d-inline-block"  type="text">
-                                    <input class=" d-inline-block"  type="email">
-                                    <input class=" d-inline-block"  type="password">
-                                    <input type="text">
+                                <form class="border rounded-3 p-1" method="get" action="">
+                                    <div class="row">
+                                        <div class="col"><h5>Nome</h5><input type="text"></div>
+                                        <div class="col"><h5>Cognome</h5><input type="text"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><h5>E-mail</h5><input type="email"></div>
+                                        <div class="col"><h5>Password</h5><input type="password"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><h5>Indirizzo</h5><input type="text"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6"><h5>Città</h5><input type="text"></div>
+                                        <div class="col-3">
+                                            <label for="exampleDataList" class="form-label"><h5 class="m-0">Stato</h5></label>
+                                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                                                <datalist id="datalistOptions">
+                                                <option value="Italia">
+                                                <option value="Germania">
+                                                <option value="Francia">
+                                                <option value="UK">
+                                                <option value="Svizzera">
+                                                </datalist>
+                                        </div>
+                                        <div class="col-3"><h5>CAP</h5><input type="text"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3">
+                                                <label for="formFile" class="form-label"><h5>Foto</h5></label>
+                                                <input class="form-control border-black" type="file" id="formFile">
+                                              </div>
+                                        </div>
+                                    </div>
+                                        
 
                                 </form>
                             </div>

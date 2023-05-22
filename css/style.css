@@ -90,7 +90,11 @@ header input{
 #my_gear:hover{
     background-color: rgba(135, 135, 135, 0.583);
 }
-
+/*Top nav*/
+input{
+    border: solid #cfd5db 1px;
+    border-radius: 5px;
+} 
 /*PROSSIME CLASSI*/
 .avatar_orange{
     width: 30px;

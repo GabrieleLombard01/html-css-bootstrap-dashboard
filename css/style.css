@@ -29,12 +29,7 @@ main{
     flex: 1 1 auto;
     background-color: azure;
     overflow-y: auto;
-    margin-left: 58px;
 }
-@media screen and (min-width: 992px) {
-    main{margin-left: 108px;}
-}
-
 /*Utilties*/
 .container{
     border: solid red 1px;

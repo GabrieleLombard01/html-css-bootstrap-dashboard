@@ -40,7 +40,7 @@
                                 <input class="rounded-3 d-lg-inline-block " placeholder="Prova a cercare:Lezioni di Laravel" type="search">
                             </form>
                     </div>
-                <div class="col-2 text-end">
+                <div class="col-2 position-relative text-end">
                     <li class="nav-item dropstart">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
                             <i class="fa-solid fa-list d-none d-lg-inline-block px-2"></i>
@@ -48,7 +48,7 @@
                             <i class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-block px-2"></i>
                             <i class="fa-solid fa-bell fa-xl" style="color: #ffae00;"></i>
                         </a>
-                        <ul class="dropdown-menu ">
+                        <ul class="dropdown-menu position-absolute end-0">
                           <li><a class="dropdown-item text-black" href="#">Profilo</a></li>
                           <li><a class="dropdown-item text-black" href="#">Fatturazione</a></li>
                           <li><a class="dropdown-item text-black" href="#">Logout</a></li>
@@ -132,7 +132,16 @@
             <div class="container-fluid bg-primary text-white m-0 p-0">
                 <div class="d-flex flex-column flex-lg-row">
                     <div class="col p-3 order-lg-last"><h2 class="d-inline me-3">Nuovo studente</h2>
-                        <button type="button" class="btn btn-outline-light">+</button>
+                        <button class="btn btn-primary border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body text-black">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur distinctio ut necessitatibus iure quisquam! Repudiandae officiis est, nobis dolorem aliquid veniam reprehenderit exercitationem eius odit provident eos necessitatibus ducimus a!
+                            </div>
+                            </div>
                     </div>
                     <div class="col-7 pt-3 pb-3 ps-3 order-lg-first"><h1 class="d-inline me-3">Boolean</h1>
                         <button type="button" class="btn btn-dark btn-sm bg_button">Piano blaze</button>

@@ -53,6 +53,9 @@ main{
 .logomobile{
     width: 60px;
 }
+@media screen and (min-width: 992px) {
+    .dropdown-menu{position: absolute;right: 0px;}
+}
 /*Layout under-content*/
 .sidebar{
     flex: 0 0 70px;

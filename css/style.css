@@ -31,10 +31,10 @@ input{
     border: solid red 1px;
 }
 .row{
-    border: solid rgb(0, 255, 8) 1px;
+    border: solid black 1px;
 }
 .col{
-    border: solid rgb(0, 13, 255) 1px;
+    border: dashed rgb(208, 208, 208) 1px;
 }
 .btn{
     padding: 2px 4px;
@@ -56,4 +56,7 @@ input{
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
 }
+
+
+
 

@@ -53,8 +53,9 @@ main{
 .logomobile{
     width: 60px;
 }
+
 @media screen and (min-width: 992px) {
-    .dropdown-menu{position: absolute;right: 0px;}
+    header{height: 42px;}
 }
 /*Layout under-content*/
 .sidebar{
@@ -64,7 +65,7 @@ main{
     .sidebar{flex-basis: 150px;}
 }
 .wrapper{
-    height: calc(100vh - 65px);
+    height: calc(100vh - 60px);
     overflow: auto;
     background-color: aliceblue;
 }

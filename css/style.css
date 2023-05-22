@@ -31,7 +31,7 @@ main{
     overflow-y: auto;
 }
 /*Utilties*/
-.container{
+/*.container{
     border: solid red 1px;
 }
 .row{
@@ -39,7 +39,7 @@ main{
 }
 .col{
     border: dashed rgb(208, 208, 208) 1px;
-}
+}*/
 .btn{
     padding: 2px 4px;
 }
@@ -49,13 +49,21 @@ main{
 .form-control{
     padding: 0;
 }
+.contained_rounded{
+    padding: 10px;
+    border: solid rgb(224, 224, 224) 1px;
+    border-radius: 15px;
+    background-color: white;
+}
 /*header*/
 .logomobile{
     width: 60px;
 }
-
+header input{
+    border: solid grey 1px;
+}
 @media screen and (min-width: 992px) {
-    header{height: 42px;}
+    header{height: 55px;}
 }
 /*Layout under-content*/
 .sidebar{
@@ -75,6 +83,14 @@ main{
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
 }
+/*Left nav - PSEUDO CLASSES*/
+.left_nav li:hover{
+    background-color: rgba(135, 135, 135, 0.583);
+}
+#my_gear:hover{
+    background-color: rgba(135, 135, 135, 0.583);
+}
+
 /*PROSSIME CLASSI*/
 .avatar_orange{
     width: 30px;

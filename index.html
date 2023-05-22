@@ -29,13 +29,13 @@
     <!--Upper content-->
 
         <!--Header-->
-        <header class=" p-2"> 
-                <div class="row align-items-center">
+        <header class=" p-0"> 
+                <div class="row m-0 align-items-center">
                     <div class="col p-0">
                         <a class="d-lg-none" href="#"><img class="logomobile" src="img/mobile-logo.png" alt="logo"></a>
                         <a class="d-none d-lg-block ps-2" href="#"><img src="img/logo.svg" alt="logo"></a>
                     </div>
-                    <div class="col">
+                    <div class="col p-0">
                         <nav class="navbar m-0 p-0 bg-light w-100">
                             <form action="" method="post">
                                 <input class="rounded-3 d-lg-inline-block" placeholder="Prova a cercare:Lezioni di Laravel" type="search">
@@ -59,161 +59,108 @@
                 </div>
             </div>
         </header>
+
         <!--Under content-->
-        
-        <main class="position-relative container p-0">
+        <div class="wrapper position-relative">
+
             <!--Left nav-->
-            <div class="container p-0 m-0 h-100 w-100">
-
-                <div class="d-flex m-0 h-100 w-100">
-                  <nav id="left_nav" class="col-2 h-100 position-absolut bottom-0 top-0 d-lg-none p-0">
-                      <div class="d-flex m-0 h-100 flex-column justify-content-between">
-                          <div class="col text-center pt-4 lh-lg">
-                              <ul class="m-0 p-0">
-                                  <li>
-                                      <a href="#" class="text-white">
-                                          <i class="fa-solid fa-house fa-2xl pb-4"></i>
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="#" class="text-white ">
-                                          <i class="fa-solid fa-chart-simple fa-2xl pb-4"></i>
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="#" class="text-white">
-                                          <i class="fa-solid fa-signal fa-2xl pb-4"></i>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </div>
-                          <div class="col text-center d-flex flex-column justify-content-end pb-3">
-                              <a id="my_gear" href="#">
-                                  <i class="text-white fa-solid fa-gear fa-2xl pt-5"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </nav>
-      
-                  <nav id="left_nav" class="d-none col-2 h-100 position-absolut bottom-0 top-0 d-lg-block">
-                      <div class="d-flex m-0 h-100 flex-column justify-content-between">
-                          <div class="col text-center pt-4 lh-lg">
-                              <ul class="m-0 p-0">
-                                  <li>
-                                      <a href="#" class="text-white">
-                                          <i class="fa-solid fa-house fa-xl pb-4"></i>
-                                          <span><strong>Home</strong></span>
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="#" class="text-white ">
-                                          <i class="fa-solid fa-chart-simple fa-xl pb-4 pe-lg-2"></i>
-                                          <span><strong>Stats</strong></span>
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="#" class="text-white">
-                                          <i class="fa-solid fa-signal fa-xl pb-4"></i>
-                                          <span><strong>Signals</strong></span>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </div>
-                          <div class="col text-center d-flex flex-column justify-content-end pb-3">
-                              <a id="my_gear" href="#">
-                                  <i class="text-white fa-solid fa-gear fa-xl pt-5"></i>
-                                  <span class="text-white"><strong>Admin</strong></span>
-                              </a>
-                          </div>
-                      </div>
-                  </nav>
-                  <!-- top Nav -->
-                  <div class="col-10 p-0">
-                    <div class="container bg-primary text-white p-0">
-                        <div class="d-flex flex-column flex-lg-row">
-                            <div class="col p-3 order-lg-last"><h2 class="d-inline me-3">Nuovo studente</h2>
-                                <button type="button" class="btn btn-outline-light">+</button>
+            <div class="sidebar left_nav position-absolute top-0 bottom-0">
+                <div class=" d-flex m-0 h-100 p-2">
+                    <nav id="left_nav" class="col h-100 position-absolut bottom-0 top-0 d-lg-none p-0">
+                        <div class="d-flex sidebar m-0 h-100 flex-column justify-content-between">
+                            <div class=" text-center pt-4 lh-lg">
+                                <ul class="m-0 p-0">
+                                    <li>
+                                        <a href="#" class="text-white">
+                                            <i class="fa-solid fa-house fa-2xl pb-4"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white ">
+                                            <i class="fa-solid fa-chart-simple fa-2xl pb-4"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white">
+                                            <i class="fa-solid fa-signal fa-2xl pb-4"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-7 pt-3 pb-3 ps-3 order-lg-first"><h1 class="d-inline me-3">Boolean</h1>
-                                <button type="button" class="btn btn-dark btn-sm bg_button">Piano blaze</button>
-                                <button type="button" class="btn btn-dark btn-sm bg_button">3 app</button>
-                                <span class="text-white"><strong>>></strong></span>
-                                <button type="button" class="btn btn-dark btn-sm bg_button d-lg-none">+</button>
-
-                                <button type="button" class="btn btn-dark btn-sm bg_button d-none d-lg-inline-block">Boolean mobile app</button>
-                                <button type="button" class="btn btn-dark btn-sm bg_button d-none d-lg-inline-block">Boolean web app</button>
-                                <button type="button" class="btn btn-dark btn-sm bg_button d-none d-lg-inline-block">Boolean blog app</button>
-                            </div>
-                            <div class="col p-3"><h2 class="d-inline me-3">Studenti online negli ultimi 30 minuti</h2>
-                                <h1 class="text-white"><strong>125</strong></h1>
+                            <div class=" text-center d-flex flex-column justify-content-end pb-3">
+                                <a id="my_gear" href="#">
+                                    <i class="text-white fa-solid fa-gear fa-2xl pt-5"></i>
+                                </a>
                             </div>
                         </div>
+                    </nav>
+                    <nav id="left_nav" class="d-none col h-100 position-absolut bottom-0 top-0 d-lg-block">
+                        <div class="d-flex m-0 h-100 flex-column justify-content-between">
+                            <div class="col text-center pt-4 lh-lg">
+                                <ul class="m-0 p-0">
+                                    <li>
+                                        <a href="#" class="text-white">
+                                            <i class="fa-solid fa-house fa-xl pb-4"></i>
+                                            <span><strong>Home</strong></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white ">
+                                            <i class="fa-solid fa-chart-simple fa-xl pb-4 pe-lg-2"></i>
+                                            <span><strong>Stats</strong></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white">
+                                            <i class="fa-solid fa-signal fa-xl pb-4"></i>
+                                            <span><strong>Signals</strong></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col text-center d-flex flex-column justify-content-end pb-3">
+                                <a id="my_gear" href="#">
+                                    <i class="text-white fa-solid fa-gear fa-xl pt-5"></i>
+                                    <span class="text-white"><strong>Admin</strong></span>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <main> <!--MAIN CONTENTS-->
+            <!--Top nav-->
+            <div class="container bg-primary text-white p-0">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="col p-3 order-lg-last"><h2 class="d-inline me-3">Nuovo studente</h2>
+                        <button type="button" class="btn btn-outline-light">+</button>
                     </div>
-                    
-                    <!-- Prossime classi -->
-                    
-                   <!-- <table class="table">
-                        <thead>
-                          <tr>
-                              <th scope="col">#</th>
-                              <th scope="col">First</th>
-                              <th scope="col">Last</th>
-                              <th scope="col">Handle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">3</th>
-                              <td colspan="2">Larry the Bird</td>
-                              <td>@twitter</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">3</th>
-                              <td colspan="2">Larry the Bird</td>
-                              <td>@twitter</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>  -->
-                    
-                    
-                </div> <!--TODO right content -->
-                </div><!--TODO row under content -->
-            </div><!--TODO Container under content -->
-        </main>
+                    <div class="col-7 pt-3 pb-3 ps-3 order-lg-first"><h1 class="d-inline me-3">Boolean</h1>
+                        <button type="button" class="btn btn-dark btn-sm bg_button">Piano blaze</button>
+                        <button type="button" class="btn btn-dark btn-sm bg_button">3 app</button>
+                        <span class="text-white"><strong>>></strong></span>
+                        <button type="button" class="btn btn-dark btn-sm bg_button d-lg-none">+</button>
+
+                        <button type="button" class="btn btn-dark btn-sm bg_button d-none d-lg-inline-block">Boolean mobile app</button>
+                        <button type="button" class="btn btn-dark btn-sm bg_button d-none d-lg-inline-block">Boolean web app</button>
+                        <button type="button" class="btn btn-dark btn-sm bg_button d-none d-lg-inline-block">Boolean blog app</button>
+                    </div>
+                    <div class="col p-3"><h2 class="d-inline me-3">Studenti online negli ultimi 30 minuti</h2>
+                        <h1 class="text-white"><strong>125</strong></h1>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+            </main>
+        </div>
+
+
+
+
     </div>
     <!--! JS Bootstrap link -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

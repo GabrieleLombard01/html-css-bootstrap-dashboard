@@ -9,21 +9,30 @@ a{
 h1{
     font-size: 26px;
     font-weight: normal;
-
+    
 }
 h2{
     font-weight: normal;
     font-size: 18px;
 }
 /*Generics*/
-main{
-    height: calc(100vh - 74px);
-    overflow: auto;
-    background-color: bisque;
+header{
+    margin: 0;
+    padding: 0;
+    height: 65px;
 }
 input{
-   width: 320px;
+    width: 320px;
     height: 40px;
+}
+main{
+    flex: 1 1 auto;
+    background-color: azure;
+    overflow-y: auto;
+    margin-left: 58px;
+}
+@media screen and (min-width: 992px) {
+    main{margin-left: 108px;}
 }
 
 /*Utilties*/
@@ -49,9 +58,19 @@ input{
 .logomobile{
     width: 60px;
 }
-
+/*Layout under-content*/
+.sidebar{
+    flex: 0 0 70px;
+}
+@media screen and (min-width: 992px) {
+    .sidebar{flex-basis: 150px;}
+}
+.wrapper{
+    height: calc(100vh - 65px);
+    background-color: aliceblue;
+}
 /*Left nav*/
-#left_nav{
+.left_nav{
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;

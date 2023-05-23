@@ -27,8 +27,7 @@ input{
 }
 main{
     flex: 1 1 auto;
-    background-color: azure;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 /*Utilties*/
 
@@ -68,7 +67,7 @@ input::-webkit-input-placeholder{
     .sidebar{flex-basis: 150px;}
 }
 .wrapper{
-    height: calc(100vh - 60px);
+    height: calc(100vh - 56px);
     overflow: auto;
     background-color: aliceblue;
 }
